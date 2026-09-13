@@ -1,0 +1,23 @@
+{
+  "name": "truetix",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "node compile.js",
+    "test": "node compile.js && mocha test/*.test.js --timeout 60000",
+    "deploy:local": "node compile.js && node scripts/deploy.js",
+    "build:frontend": "node build-frontend.js"
+  },
+  "keywords": ["ethereum", "hackathon", "nft", "ticketing"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@openzeppelin/contracts": "^5.6.1",
+    "chai": "^4.5.0",
+    "hardhat": "^2.29.1",
+    "mocha": "^12.0.0",
+    "solc": "^0.8.24"
+  }
+}
